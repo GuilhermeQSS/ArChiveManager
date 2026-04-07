@@ -1,15 +1,21 @@
 #include<stdio.h>
-#include<string.h>
+
+#include"Byte.h"
 #include"BlocoDeMemoria.h"
 #include"Entrada.h"
 #include"Utils.h"
 
 int main(){
     char nomeUsuario[USERNAMESIZE];
-    char* entradaTerminal;
+    char entradaTerminal[TERMINALINPUTSIZE];
     int tamanhoDisco;
+    int tamanhoBitMap;
+
     entradaNomeUsuario(nomeUsuario);
     tamanhoDisco = entradaTamanhoDisco();
-    BlocoDeMemoria memoria[tamanhoDisco];
+    BlocoDeMemoria memoria[MAXDISKSIZE];
+    tamanhoBitMap = initBitMap(memoria,tamanhoDisco);
+    
+    
     return 0;
 }

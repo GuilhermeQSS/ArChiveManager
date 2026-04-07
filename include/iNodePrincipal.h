@@ -1,14 +1,20 @@
 #ifndef INODEPRINCIPAL_H
 #define INODEPRINCIPAL_H
 
-#include"DataHora.h"
-
 typedef struct{
-    char permissoes[10];
-    char usuario[33];
+    char modo[11];
+
+    int count;
+
+    char dono[33];
     char grupo[33];
-    int entradas;
-    DataHora dataModificacao;
+
+    int tamanho;
+
+    char mes[4];
+    int dia;
+    char horaMin[5];
+
     int ponteirosDiretos[12];
     int ponteiroIndireto1;
     int ponteiroIndireto2;

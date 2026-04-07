@@ -6,6 +6,4 @@ typedef struct{
     int iNode;
 }DiretorioEntrada;
 
-int getInode(DiretorioEntrada diretorioEntrada);
-
 #endif

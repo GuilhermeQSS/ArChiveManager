@@ -4,8 +4,11 @@
 #include"DiretorioEntrada.h"
 
 typedef struct{
-    DiretorioEntrada entradas[9];
+    DiretorioEntrada entradas[10];
+    int tl;
     int prox;
 }Diretorio;
+
+Diretorio Diretorio_init(int iNode,int iNodePai);
 
 #endif
